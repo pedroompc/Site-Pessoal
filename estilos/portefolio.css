@@ -1,0 +1,191 @@
+/*Header*/
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 100%;
+}
+
+.portefolio {
+    align-items: flex-start;
+    background-color: #271052;
+    background-image: url("/imagens/mypicture.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    padding: 10rem;
+    position: relative;
+    width: 100%;
+}
+
+/*Texto*/
+h1 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 3.2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 3.2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.6em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.paragrafo {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/*Card*/
+.card {
+    align-items: center;
+    background-color: #384DA1;
+    background-image: url("/imagens/wolf2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    color: #B5ACEA;
+    cursor: pointer;
+    display: flex;
+    filter: grayscale(0.5);
+    height: 18em;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    transition: 0.6s ease-in-out;
+    width: 18em;
+}
+
+.card-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.6em;
+    letter-spacing: 0.2em;
+    width: 40%;
+}
+
+.card-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.card-wrapper h4 {
+    font-size: 2em;
+    letter-spacing: 4px;
+    margin: 0;
+    text-transform: uppercase;
+    transition: 0.6s ease-in-out;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    font-weight: bold;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: 0.6s ease-in-out;
+    visibility: visible;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.2em;
+}
+
+.card:hover > .card-wrapper::before {
+    height: 16em;
+    opacity: 1;
+    width: 16em;
+}
+
+.card-wrapper::before {
+    border: 0.2em solid #FFFFFF;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 10em;
+    opacity: 0;
+    position: absolute;
+    transition: 0.6s ease-in-out;
+    width: 100%;
+}
+
+/*Contatos*/
+.contatos {
+    align-items: center;
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+
+}
+
+.contatos a {
+    align-items: center;
+    border: 0.2em solid #FFFFFF;
+    border-radius: 2em;
+    color: #FFFFFF;
+    display: inline-block;
+    justify-content: center;
+    min-width: 4rem;
+    padding: 0.8rem 4rem;
+    text-decoration: none;
+    transition: .6s ease-in-out;
+    margin: 0.2rem;
+}
+
+.contatos a:hover {
+    background-color: #B5ACEA;
+}
+
+/*Footer*/
+footer {
+    align-items: center;
+    background-color: #0F142A;
+    color: #877CD3;
+    display: flex;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2em;
+    height: 6em;
+    justify-content: center;
+    padding: 0.8% 0.8%;
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+/*Texto*/
+h1 {
+    color: #FFFFFF;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    margin: 0.8em;
+    text-align: center;
+}
+
+.paragrafo {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    margin: 0.8em;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    align-items: center;
+    background-color: #0F142A;
+    color: #877CD3;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    height: 6em;
+    justify-content: center;
+    padding: 0.8% 0.8%;
+    width: 100%;
+}
